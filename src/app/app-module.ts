@@ -10,6 +10,8 @@ import { Dashboard } from './pages/dashboard/dashboard';
 import { Breadcrumbs } from './shared/breadcrumbs/breadcrumbs';
 import { Sidebar } from './shared/sidebar/sidebar';
 import { Header } from './shared/header/header';
+import { Progress } from './pages/progress/progress';
+import { Grafical } from './pages/grafical/grafical';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { Header } from './shared/header/header';
     Dashboard,
     Breadcrumbs,
     Sidebar,
-    Header
+    Header,
+    Progress,
+    Grafical
   ],
   imports: [
     BrowserModule,
