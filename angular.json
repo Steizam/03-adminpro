@@ -33,7 +33,16 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/plugins/bootstrap/css/bootstrap.min.css",
+              "src/assets/css/pages/login-register-lock.css",
+              "src/assets/css/style.css",
+              "src/assets/css/colors/default-dark.css",
               "src/styles.css"
+            ],
+            "scripts": [
+                "src/assets/plugins/jquery/jquery.min.js",
+                "src/assets/plugins/bootstrap/js/popper.min.js",
+                "src/assets/plugins/bootstrap/js/bootstrap.min.js"
             ]
           },
           "configurations": {

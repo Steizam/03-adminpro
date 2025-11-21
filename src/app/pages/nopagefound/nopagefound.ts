@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-nopagefound',
   standalone: false,
   templateUrl: './nopagefound.html',
-  styles: ``,
+  styleUrls: ['./nopagefound.css'],
 })
 export class Nopagefound {
-
+    year = new Date ().getFullYear();
 }

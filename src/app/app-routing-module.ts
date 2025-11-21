@@ -6,14 +6,24 @@ import { Register } from './auth/register/register';
 import { Progress } from './pages/progress/progress';
 import { Grafical } from './pages/grafical/grafical';
 import { Nopagefound } from './pages/nopagefound/nopagefound';
+import { Pages } from './pages/pages';
 
 const routes: Routes = [
-  { path: 'dashboard', component: Dashboard},
-  { path: 'login', component: Login},
+  { 
+    path: '',
+    component: Pages,
+    children: [
+      { path: 'dashboard', component: Dashboard},  
+      { path: 'progress', component: Progress},
+      { path: 'grafical', component: Grafical},
+      { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+    ]
+  },
+
+
   { path: 'register', component: Register},
-  { path: 'progress', component: Progress},
-  { path: 'grafical', component: Grafical},
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+  { path: 'login', component: Login},
+
   { path: '**', component: Nopagefound},
 
 ];

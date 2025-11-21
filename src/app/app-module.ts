@@ -12,6 +12,7 @@ import { Sidebar } from './shared/sidebar/sidebar';
 import { Header } from './shared/header/header';
 import { Progress } from './pages/progress/progress';
 import { Grafical } from './pages/grafical/grafical';
+import { Pages } from './pages/pages';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Grafical } from './pages/grafical/grafical';
     Sidebar,
     Header,
     Progress,
-    Grafical
+    Grafical,
+    Pages
   ],
   imports: [
     BrowserModule,
