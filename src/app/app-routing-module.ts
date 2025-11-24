@@ -5,7 +5,7 @@ import { Login } from './auth/login/login';
 import { Register } from './auth/register/register';
 import { Progress } from './pages/progress/progress';
 import { Grafical } from './pages/grafical/grafical';
-import { Nopagefound } from './pages/nopagefound/nopagefound';
+import { Nopagefound } from './nopagefound/nopagefound';
 import { Pages } from './pages/pages';
 
 const routes: Routes = [
